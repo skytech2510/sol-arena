@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("./font/Oswald-VariableFont_wght.ttf"), format('ttf')
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./font/Poppins-Regular.ttf"), format('ttf')
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./font/Montserrat-Regular.ttf"), format('ttf')
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Poppins;
+}
+
+.section {
+  background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .section {
+    background-size: auto 100%;
+  }
+}
