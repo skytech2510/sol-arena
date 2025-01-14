@@ -7,7 +7,7 @@ const EvaSection: React.FC = () => {
   return (
     <>
       <div
-        className="section w-full h-[1024px] bg-no-repeat bg-center "
+        className="section w-full bg-no-repeat bg-center"
         style={{
           backgroundImage:
             mouseover == 0
@@ -17,8 +17,8 @@ const EvaSection: React.FC = () => {
               : "url('/assets/eva/eva-back3.webp')",
         }}
       >
-        <div className="max-w-[1440px] m-auto flex justify-left items-center px-[99px] pt-[165px] pb-[206px] ">
-          <div className="w-[100%] flex flex-col gap-12 justify-center ">
+        <div className="max-w-[1440px] m-auto flex justify-left items-center px-[99px] pt-[248px] pb-[292px]">
+          <div className="w-[100%] flex flex-col gap-12 justify-center">
             <div className=" relative">
               <div
                 className="w-[128px] h-[128px] border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"

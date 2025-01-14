@@ -29,7 +29,7 @@ export default function Home() {
         /> */}
 
         <div
-          className="section w-full h-auto bg-center"
+          className="section w-full bg-center"
           style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
         >
           <div className="max-w-[1440px] m-auto py-[101px] px-[64px]">
@@ -100,21 +100,21 @@ export default function Home() {
         <EvaSection />
         
         <div
-          className="section w-full h-[1024px] bg-center bg-no-repeat"
+          className="section w-full bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
         >
-          <div className="max-w-[1440px] m-auto flex flex-col justify-center items-center pt-[50px] pb-[162px]">
+          <div className="max-w-[1440px] m-auto flex flex-col gap-14 justify-center items-center pt-[50px] pb-[162px]">
             <Image
               src={"/assets/season/season-logo.png"}
               alt="logo"
               width={288}
               height={120}
             />
-            <div className="mt-[51px]">
+            <div className="">
               <SeasonSection />
             </div>
             <button
-              className="w-[264px] h-[84px] rounded-md mt-[55px] font-bold font-[Oswald] text-[38px] text-[#020215]"
+              className="w-[264px] h-[84px] rounded-md font-bold font-[Oswald] text-[38px] text-[#020215]"
               style={{
                 backgroundImage: "url(./assets/play-now-btn.png)",
                 backgroundSize: "100% 100%",

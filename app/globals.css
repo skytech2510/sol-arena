@@ -39,8 +39,10 @@ body {
   background-size: 100% 100%;
 }
 .section {
-  height: calc(100vw*1024/1440);
+  /* height: calc(100vw*1024/1440); */
+  /* height: 1400px; */
   background-size: 100% 100%;
+  /* padding-top: calc((calc(100vw * 1024 / 1440) - 1034px) / 2); */
 }
 .footer {
   background-size: 100% 100%;

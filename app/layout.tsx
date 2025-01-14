@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sol Arena",
-  description: "sol arena landing page",
+  title: "SOL Arena",
+  description: "SOL Arena landing page",
 };
 
 export default function RootLayout({
