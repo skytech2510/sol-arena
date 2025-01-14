@@ -13,7 +13,7 @@ export default function Home() {
     <div className="relative z-[0]">
       <main className="w-full">
         <div
-          className="section w-full h-[1249px] bg-center bg-no-repeat mb-[-2px]"
+          className="hero-section w-full bg-center bg-no-repeat mb-[-2px]"
           style={{ backgroundImage: "url('./assets/hero-img.webp')" }}
         ></div>
 

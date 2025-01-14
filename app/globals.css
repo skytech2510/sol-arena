@@ -13,14 +13,17 @@
     --foreground: #ededed;
   }
 }
+
 @font-face {
   font-family: "Oswald";
   src: url("./font/Oswald-VariableFont_wght.ttf"), format('ttf')
 }
+
 @font-face {
   font-family: "Poppins";
   src: url("./font/Poppins-Regular.ttf"), format('ttf')
 }
+
 @font-face {
   font-family: "Montserrat";
   src: url("./font/Montserrat-Regular.ttf"), format('ttf')
@@ -31,13 +34,27 @@ body {
   background: var(--background);
   font-family: Poppins;
 }
-
-.section {
+.hero-section {
+  height: calc(100vw*1249/1440);
   background-size: 100% 100%;
 }
-
+.section {
+  height: calc(100vw*1024/1440);
+  background-size: 100% 100%;
+}
+.footer {
+  background-size: 100% 100%;
+}
 @media only screen and (max-width: 1440px) {
+  .hero-section {
+    height: 1249px;
+    background-size: auto 100%;
+  }
   .section {
+    height: 1024px;
+    background-size: auto 100%;
+  }
+  .footer {
     background-size: auto 100%;
   }
 }

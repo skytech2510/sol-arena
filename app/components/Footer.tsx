@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <div
-        className="section w-full h-[607px] bg-center bg-no-repeat relative"
+        className="footer w-full h-[607px] bg-center bg-no-repeat relative"
         style={{ backgroundImage: "url('/assets/footer/footer-back.png')" }}
       >
         <div className="max-w-[1440px] m-auto flex flex-row ">

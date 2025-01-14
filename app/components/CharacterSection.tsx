@@ -15,10 +15,10 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
   return (
     <>
       <div
-        className="section w-full h-auto bg-center bg-no-repeat"
+        className="section w-full h-auto bg-center bg-no-repeat border "
         style={{ backgroundImage: `url(${backImage})` }}
       >
-        <div className="max-w-[1440px] m-auto flex flex-row pl-[96px] pr-[24px] flex-wrap">
+        <div className="max-w-[1440px] m-auto flex flex-row pl-[96px] pr-[24px] flex-wrap border">
           <div className="flex-1 pt-[120px] pb-[140px]">
             <Image
               src={"/assets/character/text-img1.png"}
