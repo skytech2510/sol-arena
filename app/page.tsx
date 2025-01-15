@@ -32,10 +32,10 @@ export default function Home() {
           className="section w-full bg-center"
           style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
         >
-          <div className="max-w-[1440px] m-auto py-[101px] px-[64px]">
-            <div className="flex flex-row justify-center items-center bg-center bg-opacity-20 bg-[#1919AD] bg-[url('/assets/features/Mask-group.png')] w-full h-[837px] border-8 border-[#41FFC6] rounded-[56px] shadow-[0_0_41px_3px_#2600A8] shadow-inner-[0_0_50px_3px_#0095FF] relative">
+          <div className="max-w-[1440px] m-auto py-[101px] px-[64px] ">
+            <div className=" overflow-hidden flex flex-row justify-center items-center bg-center bg-opacity-20 bg-[#1919AD] bg-[url('/assets/features/Mask-group.png')] w-full h-[837px] border-8 border-[#41FFC6] rounded-[56px] shadow-[0_0_41px_3px_#2600A8] shadow-inner-[0_0_50px_3px_#0095FF] relative">
               <div
-                className="flex justify-center items-center w-[283px] h-[76px] absolute top-0 right-[-1px] bg-cover bg-center text-[32px] font-black text-[#0A164E]"
+                className="flex justify-center items-center w-[283px] h-[76px] absolute top-0 right-[-1px] bg-cover bg-center text-[32px] font-black text-[#0A164E] "
                 style={{
                   backgroundImage: "url('/assets/features/text-back.png')",
                 }}

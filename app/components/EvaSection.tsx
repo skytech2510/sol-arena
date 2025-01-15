@@ -7,7 +7,7 @@ const EvaSection: React.FC = () => {
   return (
     <>
       <div
-        className="section w-full bg-no-repeat bg-center"
+        className="section w-full bg-no-repeat bg-center transition-all duration-300"
         style={{
           backgroundImage:
             mouseover == 0
