@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
         className="footer w-full h-[607px] bg-center bg-no-repeat relative"
         style={{ backgroundImage: "url('/assets/footer/footer-back.png')" }}
       >
-        <div className="max-w-[1440px] m-auto flex flex-row ">
-          <div className="flex flex-col gap-[42px] pt-[94px] pl-[185px] pb-[25px]">
+        <div className="max-w-[1440px] m-auto flex flex-row">
+          <div className="flex flex-col gap-[42px] pt-[94px] pl-4 lg:pl-[185px] pb-[25px]">
             <div className="flex flex-row gap-0">
               <button
                 className="font-[Oswald] text-white text-[18px] font-bold border-2 border-[#6F58FF] w-[77px] h-10 flex justify-center items-center"

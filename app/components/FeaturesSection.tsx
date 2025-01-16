@@ -81,7 +81,7 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
           >
             <h1 className="pr-5">Feature 1</h1>
           </div>
-          <div className="text-[16px] font-[Montserrat] text-white font-medium px-4 py-3 border-[2px] border-[#130C51] rounded-[20px] rounded-ss-[0] max-w-[366px] bg-[#603CDB]">
+          <div className=" text-[16px] font-[Montserrat] text-white font-medium px-4 py-3 border-[2px] border-[#130C51] rounded-[20px] rounded-ss-[0] max-w-[366px] bg-[#603CDB]">
             Lorem ipsum dolor sit amet conser. Rhoncus gravida massa posuere
             sed. Pharet lorem facis. Sit laoreet sed pretm fusce nisl faucibus.
           </div>

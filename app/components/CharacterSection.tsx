@@ -90,7 +90,7 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
               />
             </div>
           </div>
-          <div className=" h-[977px] flex-1 flex justify-center pt-[78px] relative">
+          <div className=" h-[977px] flex-1 justify-center pt-[78px] relative hidden lg:flex">
             <Image
               src={`${bigGuy}`}
               alt="character girl"

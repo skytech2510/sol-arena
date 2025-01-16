@@ -10,25 +10,25 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const navigator = useRouter();
   return (
-    <div className="relative z-[0]">
+    <div className="relative z-0 mt-[72px]">
       <main className="w-full">
         <div
           className="hero-section w-full bg-center bg-no-repeat mb-[-2px]"
           style={{ backgroundImage: "url('./assets/hero-img.webp')" }}
         ></div>
 
-        <CharacterSection
+        {/* <CharacterSection
           backImage="/assets/character/character-section-bg1.webp"
           bigGuy="/assets/character/character-girl.png"
           smallGuy="/assets/character/character-small-girl.png"
-        />
+        /> */}
         {/* <CharacterSection
           backImage="/assets/character/character-section-bg2.webp"
           bigGuy="/assets/character/character-boy.png"
           smallGuy="/assets/character/character-small-boy.png"
         /> */}
 
-        <div
+        {/* <div
           className="section w-full bg-center"
           style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
         >
@@ -95,11 +95,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <EvaSection />
+        {/* <EvaSection /> */}
         
-        <div
+        {/* <div
           className="section w-full bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
         >
@@ -127,7 +127,7 @@ export default function Home() {
               PLAY NOW
             </button>
           </div>
-        </div>
+        </div> */}
       </main>
     </div>
   );

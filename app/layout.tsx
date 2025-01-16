@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SOL Arena",
-  description: "SOL Arena landing page",
+  title: "SOL Arena: Snake Evolved - Battle, Extract, Win Rewards",
+  description: "SOL Arena: Snake Evolved - Battle, Extract, Win Rewards",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <Header/>
         {children}
-        <Footer/>
+        {/* <Footer/> */}
       </body>
     </html>
   );

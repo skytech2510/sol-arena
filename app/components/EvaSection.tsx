@@ -33,11 +33,10 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className=" max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-84px] left-[144px] transition-all"
+                className={` ${mouseover == 0 ? "lg:block hidden" : "hidden"} max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-84px] left-[144px] transition-all`}
                 style={{
                   backgroundImage: "url('/assets/eva/text-back1.png')",
                   backgroundSize: "100% 100%",
-                  display: mouseover == 0 ? "block" : "none",
                 }}
               >
                 <div className="">
@@ -70,11 +69,10 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className="max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-144px] left-[144px] transition-all"
+                className={` ${mouseover == 1 ? "lg:block hidden" : "hidden"} max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-144px] left-[144px] transition-all`}
                 style={{
                   backgroundImage: "url('/assets/eva/text-back2.png')",
                   backgroundSize: "100% 100%",
-                  display: mouseover == 1 ? "block" : "none",
                 }}
               >
                 <h1 className=" text-[32px] font-[Poppins] font-bold text-[#41FFC6]">
@@ -105,11 +103,10 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className="max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-204px] left-[144px] transition-all"
+                className={` ${mouseover == 2 ? "lg:block hidden" : "hidden"} max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-204px] left-[144px] transition-all`}
                 style={{
                   backgroundImage: "url('/assets/eva/text-back3.png')",
                   backgroundSize: "100% 100%",
-                  display: mouseover == 2 ? "block" : "none",
                 }}
               >
                 <h1 className=" text-[32px] font-[Poppins] font-bold text-[#41FFC6]">
