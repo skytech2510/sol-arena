@@ -6,29 +6,65 @@ import EvaSection from "./components/EvaSection";
 import SeasonSection from "./components/SeasonSection";
 
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function Home() {
   const navigator = useRouter();
+  const [isButton, setIsButton] = useState(false);
+
+  const handlePlayButton = () => {
+    setIsButton(true);
+    setTimeout(() => {
+      setIsButton(false);
+    }, 600)
+  }
+
   return (
     <div className="relative z-0 mt-[72px]">
       <main className="w-full">
         <div
           className="hero-section w-full bg-center bg-no-repeat mb-[-2px]"
           style={{ backgroundImage: "url('./assets/hero-img.webp')" }}
-        ></div>
+        >
+          <div
+            className="flex lg:hidden justify-center items-center w-[100%] absolute top-[525px]"
+          >
+            <button
+              className=" w-[163px] h-[52px] rounded-md font-bold font-[Oswald] text-[28px] text-[#020215]"
+              style={{
+                backgroundImage: "url(./assets/play-now-btn.png)",
+                backgroundSize: "100% 100%",
+                boxShadow: "0px 0px 20px 3px",
+              }}
+              onClick={() => {
+                handlePlayButton();
+              }}
+            >
+              PLAY NOW
+            </button>
+            <Image
+              src={"/assets/play-spark.png"}
+              alt="spark"
+              width={264}
+              height={264}
+              className=" absolute top-[-40px] left-[50%] w-[160px] h-[160px]"
+              style={{ display: isButton ? "block" : "none" }}
+            />
+          </div>
+        </div>
 
-        {/* <CharacterSection
+        <CharacterSection
           backImage="/assets/character/character-section-bg1.webp"
           bigGuy="/assets/character/character-girl.png"
           smallGuy="/assets/character/character-small-girl.png"
-        /> */}
+        />
         {/* <CharacterSection
           backImage="/assets/character/character-section-bg2.webp"
           bigGuy="/assets/character/character-boy.png"
           smallGuy="/assets/character/character-small-boy.png"
         /> */}
 
-        {/* <div
+        <div
           className="section w-full bg-center"
           style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
         >
@@ -95,11 +131,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <EvaSection /> */}
-        
-        {/* <div
+        <EvaSection />
+
+        <div
           className="section w-full bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
         >
@@ -127,7 +163,7 @@ export default function Home() {
               PLAY NOW
             </button>
           </div>
-        </div> */}
+        </div>
       </main>
     </div>
   );

@@ -104,6 +104,9 @@ const Header: React.FC = () => {
               onMouseLeave={() => {
                 setIsMenu(0);
               }}
+              onClick={() => {
+                setIsOpen(false);
+              }}
             >
               HOME
             </Link>
@@ -138,6 +141,9 @@ const Header: React.FC = () => {
               }}
               onMouseLeave={() => {
                 setIsMenuPlay(0);
+              }}
+              onClick={() => {
+                setIsOpen(false);
               }}
             >
               HOW TO PLAY
@@ -174,6 +180,9 @@ const Header: React.FC = () => {
               onMouseLeave={() => {
                 setIsMenuChill(0);
               }}
+              onClick={() => {
+                setIsOpen(false);
+              }}
             >
               $CHILL
             </Link>
@@ -202,7 +211,7 @@ const Header: React.FC = () => {
               alt="spark"
               width={264}
               height={264}
-              className=" absolute top-[-40px] left-[50%-50] lg:top-[-70px] lg:left-[-30px] transition-all duration-300 w-[160px] lg:w-[264px] h-[160px] lg:h-[264px]"
+              className=" absolute top-[-40px] left-[50%] lg:top-[-70px] lg:left-[-30px] transition-all duration-300 w-[160px] lg:w-[264px] h-[160px] lg:h-[264px]"
               style={{ display: isButton ? "block" : "none" }}
             />
           </div>

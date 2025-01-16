@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 interface CharacterSectionPropsType {
   backImage: string;
   bigGuy: string;
@@ -12,13 +13,14 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
   bigGuy,
   smallGuy,
 }) => {
+  const [isScale, setIsScale] = useState(1)
   return (
     <>
       <div
         className="section w-full bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backImage})` }}
       >
-        <div className="max-w-[1440px] m-auto flex flex-row pl-[96px] pr-[24px] border relative">
+        <div className="max-w-[1440px] m-auto flex flex-row pl-[96px] pr-[24px] relative">
           <div className="flex-1 pt-[120px] pb-[140px]">
             <Image
               src={"/assets/character/text-img1.png"}
@@ -52,41 +54,46 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
             >
               Challengers
             </div>
-            <div className="mt-[54px] flex flex-row gap-3 flex-wrap">
+            <div className=" h-[165px] mt-[54px] flex flex-row justify-start items-end gap-1 ">
               <Image
-                src={"/assets/character/avatar-1.png"}
-                alt="avatar1"
-                width={108}
-                height={116}
-                className="hover:scale-125 transition-all cursor-pointer"
+                src={isScale !== 1 ? "/assets/character/avatar-1.png" : "/assets/character/avatar-1-big.png"}
+                alt="avatar"
+                width={145}
+                height={162}
+                className={` transition-all cursor-pointer ${isScale !== 1 ? "w-[126px] h-[141px]" : "w-[145px] h-[162px]"}`}
+                onClick={() => {setIsScale(1)}}
               />
               <Image
-                src={"/assets/character/avatar-2.png"}
-                alt="avatar1"
-                width={108}
-                height={116}
-                className="hover:scale-125 transition-all cursor-pointer"
+                src={isScale !== 2 ? "/assets/character/avatar-2.png" : "/assets/character/avatar-2-big.png"}
+                alt="avatar"
+                width={145}
+                height={162}
+                className={` transition-all cursor-pointer ${isScale !== 2 ? "w-[126px] h-[141px]" : "w-[145px] h-[162px]"}`}
+                onClick={() => {setIsScale(2)}}
               />
               <Image
-                src={"/assets/character/avatar-3.png"}
-                alt="avatar1"
-                width={108}
-                height={116}
-                className="hover:scale-125 transition-all cursor-pointer"
+                src={isScale !== 3 ? "/assets/character/avatar-3.png" : "/assets/character/avatar-3-big.png"}
+                alt="avatar"
+                width={145}
+                height={162}
+                className={` transition-all cursor-pointer ${isScale !== 3 ? "w-[126px] h-[141px]" : "w-[145px] h-[162px]"}`}
+                onClick={() => {setIsScale(3)}}
               />
               <Image
-                src={"/assets/character/avatar-4.png"}
-                alt="avatar1"
-                width={108}
-                height={116}
-                className="hover:scale-125 transition-all cursor-pointer"
+                src={isScale !== 4 ? "/assets/character/avatar-4.png" : "/assets/character/avatar-4-big.png"}
+                alt="avatar"
+                width={145}
+                height={162}
+                className={` transition-all cursor-pointer ${isScale !== 4 ? "w-[126px] h-[141px]" : "w-[145px] h-[162px]"}`}
+                onClick={() => {setIsScale(4)}}
               />
               <Image
-                src={"/assets/character/avatar-5.png"}
-                alt="avatar1"
-                width={108}
-                height={116}
-                className="hover:scale-125 transition-all cursor-pointer"
+                src={isScale !== 5 ? "/assets/character/avatar-5.png" : "/assets/character/avatar-5-big.png"}
+                alt="avatar"
+                width={145}
+                height={162}
+                className={` transition-all cursor-pointer ${isScale !== 5 ? "w-[126px] h-[141px]" : "w-[145px] h-[162px]"}`}
+                onClick={() => {setIsScale(5)}}
               />
             </div>
           </div>
