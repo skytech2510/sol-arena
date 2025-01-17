@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   const [isMenuPlay, setIsMenuPlay] = useState(0);
   const [isMenuChill, setIsMenuChill] = useState(0);
   const [isButton, setIsButton] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
@@ -24,7 +24,15 @@ const Header: React.FC = () => {
         setIsOpen(false);
       }
     };
-  })
+  }, []);
+
+  const handlHeader = () => {
+    if (window.outerWidth < 1024) {
+      setIsOpen(false);
+    } else {
+      setIsOpen(true);
+    }
+  }
 
   const handleButton = () => {
     setIsButton(true);
@@ -70,7 +78,6 @@ const Header: React.FC = () => {
             className={` flex-[3] flex-wrap flex-col lg:flex-row justify-start lg:justify-start items-center absolute pt-[116px] lg:pt-0 top-0 lg:top-0 h-[100vh] lg:h-auto lg:relative w-[100%] gap-8 lg:gap-4 font-[Oswald] text-[18px] font-bold bg-cover bg-no-repeat bg-right bg-[url('/assets/mobile-header-bck.png')] lg:bg-none transition-opacity duration-500 ease-in-out ${
               isOpen ? "opacity-100 flex" : "opacity-0 hidden"
             } `}
-            style={{ display: isOpen ? "flex" : "none" }}
           >
             <Link
               href={"/"}
@@ -105,7 +112,7 @@ const Header: React.FC = () => {
                 setIsMenu(0);
               }}
               onClick={() => {
-                setIsOpen(false);
+                handlHeader();
               }}
             >
               HOME
@@ -143,7 +150,7 @@ const Header: React.FC = () => {
                 setIsMenuPlay(0);
               }}
               onClick={() => {
-                setIsOpen(false);
+                handlHeader();
               }}
             >
               HOW TO PLAY
@@ -181,7 +188,7 @@ const Header: React.FC = () => {
                 setIsMenuChill(0);
               }}
               onClick={() => {
-                setIsOpen(false);
+                handlHeader();
               }}
             >
               $CHILL
@@ -191,7 +198,6 @@ const Header: React.FC = () => {
             className={`flex-1 justify-center lg:justify-end items-center lg:items-start w-[100%] absolute top-[684px] lg:top-0 lg:relative transition-opacity duration-500 ease-in-out ${
               isOpen ? "opacity-100 flex" : "opacity-0 hidden"
             } `}
-            style={{ display: isOpen ? "flex" : "none" }}
           >
             <button
               className=" w-[163px] lg:w-[264px] h-[52px] lg:h-[84px] rounded-md font-bold font-[Oswald] text-[28px] lg:text-[38px] text-[#020215]"

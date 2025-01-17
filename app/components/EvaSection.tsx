@@ -7,7 +7,7 @@ const EvaSection: React.FC = () => {
   return (
     <>
       <div
-        className="section w-full bg-no-repeat bg-center transition-all duration-300"
+        className="section w-full h-[894px] md:h-auto relative border-2 border-[#000] bg-no-repeat bg-right md:bg-center transition-all duration-300"
         style={{
           backgroundImage:
             mouseover == 0
@@ -17,8 +17,8 @@ const EvaSection: React.FC = () => {
               : "url('/assets/eva/eva-back3.webp')",
         }}
       >
-        <div className="max-w-[1440px] m-auto flex justify-left items-center px-[99px] pt-[248px] pb-[292px]">
-          <div className="w-[100%] flex flex-col gap-12 justify-center">
+        <div  className=" border max-w-[1440px] h-[100%] md:h-auto m-auto px-0 md:px-[40px] lg:px-[99px] pt-[234px] pb-[278px] relative">
+          <div className="border flex flex-row md:flex-col gap-12 justify-center absolute md:relative bottom-[146px] md:bottom-0 w-[100%] md:w-auto">
             <div className=" relative">
               <div
                 className="w-[128px] h-[128px] border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
@@ -28,12 +28,12 @@ const EvaSection: React.FC = () => {
                   scale: mouseover == 0 ? 1.25 : 1,
                   borderColor: mouseover == 0 ? "#41FFC6" : "#1E7EF4",
                 }}
-                onMouseOver={() => {
+                onClick={() => {
                   setMouseOver(0);
                 }}
               ></div>
               <div
-                className={` ${mouseover == 0 ? "lg:block hidden" : "hidden"} max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-84px] left-[144px] transition-all`}
+                className={` ${mouseover == 0 ? "block" : "hidden"} hidden max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-84px] left-[144px] transition-all`}
                 style={{
                   backgroundImage: "url('/assets/eva/text-back1.png')",
                   backgroundSize: "100% 100%",
@@ -64,12 +64,12 @@ const EvaSection: React.FC = () => {
                   scale: mouseover == 1 ? 1.25 : 1,
                   borderColor: mouseover == 1 ? "#41FFC6" : "#FF62FC",
                 }}
-                onMouseOver={() => {
+                onClick={() => {
                   setMouseOver(1);
                 }}
               ></div>
               <div
-                className={` ${mouseover == 1 ? "lg:block hidden" : "hidden"} max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-144px] left-[144px] transition-all`}
+                className={` ${mouseover == 1 ? "block" : "hidden"} hidden max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-144px] left-[144px] transition-all`}
                 style={{
                   backgroundImage: "url('/assets/eva/text-back2.png')",
                   backgroundSize: "100% 100%",
@@ -98,12 +98,12 @@ const EvaSection: React.FC = () => {
                   scale: mouseover == 2 ? 1.25 : 1,
                   borderColor: mouseover == 2 ? "#41FFC6" : "#6F58FF",
                 }}
-                onMouseOver={() => {
+                onClick={() => {
                   setMouseOver(2);
                 }}
               ></div>
               <div
-                className={` ${mouseover == 2 ? "lg:block hidden" : "hidden"} max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-204px] left-[144px] transition-all`}
+                className={` ${mouseover == 2 ? "block" : "hidden"} hidden max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-204px] left-[144px] transition-all`}
                 style={{
                   backgroundImage: "url('/assets/eva/text-back3.png')",
                   backgroundSize: "100% 100%",
