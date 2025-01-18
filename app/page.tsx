@@ -12,7 +12,6 @@ export default function Home() {
   const navigator = useRouter();
   const [isButton, setIsButton] = useState(false);
   const [activeCardID, setActiveCardID] = useState(0);
-  const [isSelectCard, setIsSelectCard] = useState(0);
 
   const handlePlayButton = () => {
     setIsButton(true);
